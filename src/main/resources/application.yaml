@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: demo
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/dev_test
+    username: dev
+    password: P4$$word
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update # Options: validate, update, create, create-drop
+    show-sql: true # Set to true to log SQL queries
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+
+vaadin:
+  launch-browser: true
+
